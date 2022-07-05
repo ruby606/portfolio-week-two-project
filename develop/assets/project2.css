@@ -1,0 +1,80 @@
+body{
+    background-color: darkgrey;}
+h1{font-family:Arial, Helvetica, sans-serif;}
+
+
+header {
+    background-color:darkmagenta;
+    font:black;
+    margin: 3;
+    height: 100%;
+    width: 100%;
+    border-bottom: 10px grey;
+}
+
+/* using a navigation link to deploy links when the link is clicked on */
+nav ul li {
+    display: inline-block;
+    text-decoration: black;
+    position: relative;
+    justify-content:right;
+    /* :right: 100%; */
+}
+
+.Work
+{
+display:block;
+flex:auto;
+padding: 5px;
+text-decoration: underline;
+margin:15px 5px;
+
+}
+
+/* using a flexbox to learn media quary */
+
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: red;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flexbox
+{display:flex;
+ background-color: yellow;
+ 
+}
+.practicewithboxes{
+display:block;
+font:200;
+color:black;
+}
+
+@media screen and (max-width: 992px){
+.flex-container{
+ width: 50%; 
+ flex-direction: column;
+}
+}
+
+@media screen and (max-wiidth:  630px){
+    .flex-container{
+    width: 100%;
+     
+    }
+}
